@@ -4,7 +4,15 @@ import random
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(page_title="Viral Post Generator", page_icon="🚀", layout="wide")
-
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            div[data-testid="stToolbar"] {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 # --- SIDEBAR (Branding & Info) ---
 with st.sidebar:
     # Adding a Logo (using a free icon URL)
@@ -152,3 +160,4 @@ if st.button("Generate Content 🚀", type="primary"):
 # --- FOOTER ---
 st.markdown("---")
 st.caption("Built by Aqib | v3.0 Pro")
+
