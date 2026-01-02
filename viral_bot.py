@@ -4,18 +4,19 @@ import random
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(page_title="Viral Post Generator", page_icon="🚀", layout="wide")
-# --- HIDE STREAMLIT STYLE ---
+# --- HIDE STREAMLIT BRANDING ---
 hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            div[data-testid="stToolbar"] {visibility: hidden;}
-            div[data-testid="stDecoration"] {visibility: hidden;}
-            div[data-testid="stStatusWidget"] {visibility: hidden;}
-            .stApp > header {display: none;}
-            </style>
-            """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+.stAppDeployButton {display: none;}
+[data-testid="stToolbar"] {display: none !important;}
+.viewerBadge_container__1QSob {display: none !important;}
+div[class^='viewerBadge'] {display: none !important;}
+</style>
+"""
+st.markdown(hide_st_style, unsafe_allow_html=True)
 st.markdown(hide_st_style, unsafe_allow_html=True)
 </style>
             """
@@ -167,6 +168,7 @@ if st.button("Generate Content 🚀", type="primary"):
 # --- FOOTER ---
 st.markdown("---")
 st.caption("Built by Aqib | v3.1 Pro")
+
 
 
 
