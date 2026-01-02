@@ -4,6 +4,7 @@ import random
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(page_title="Viral Post Generator", page_icon="🚀", layout="wide")
+
 # --- HIDE STREAMLIT BRANDING ---
 hide_st_style = """
 <style>
@@ -17,16 +18,13 @@ div[class^='viewerBadge'] {display: none !important;}
 </style>
 """
 st.markdown(hide_st_style, unsafe_allow_html=True)
-st.markdown(hide_st_style, unsafe_allow_html=True)
-</style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
+
 # --- SIDEBAR (Branding & Info) ---
 with st.sidebar:
     # Adding a Logo (using a free icon URL)
     st.image("https://cdn-icons-png.flaticon.com/512/2620/2620987.png", width=80)
     st.title("ViralBot Pro")
-    st.caption("v3.0 - Ultimate Edition")
+    st.caption("v3.1 - Ultimate Edition")
     st.markdown("---")
     
     # "How to Use" Guide inside an Expander
@@ -168,7 +166,3 @@ if st.button("Generate Content 🚀", type="primary"):
 # --- FOOTER ---
 st.markdown("---")
 st.caption("Built by Aqib | v3.1 Pro")
-
-
-
-
