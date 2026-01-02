@@ -17,7 +17,7 @@ hide_st_style = """
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
-            </style>
+</style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 # --- SIDEBAR (Branding & Info) ---
@@ -167,5 +167,6 @@ if st.button("Generate Content 🚀", type="primary"):
 # --- FOOTER ---
 st.markdown("---")
 st.caption("Built by Aqib | v3.1 Pro")
+
 
 
