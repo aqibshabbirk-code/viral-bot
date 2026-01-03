@@ -26,6 +26,15 @@ with st.sidebar:
     st.title("ViralBot Pro")
     st.caption("v3.1 - Ultimate Edition")
     st.markdown("---")
+    https://gumroad.com/l/yourproduct
+    # 👇 NEW BUY BUTTON ADDED HERE 👇
+    st.link_button(
+        label="⚡ Get Source Code ($9)", 
+        url="[YOUR_GUMROAD_LINK_HERE]"  # <--- PASTE YOUR LINK HERE
+    )
+    st.caption("Launch your own SaaS in minutes.")
+    st.markdown("---")
+    # 👆 END OF NEW CODE 👆
     
     # "How to Use" Guide inside an Expander
     with st.expander("ℹ️ How to use this tool"):
