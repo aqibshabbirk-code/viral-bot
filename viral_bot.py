@@ -24,14 +24,11 @@ with st.sidebar:
     # Adding a Logo (using a free icon URL)
     st.image("https://cdn-icons-png.flaticon.com/512/2620/2620987.png", width=80)
     st.title("ViralBot Pro")
-    st.caption("v3.1 - Ultimate Edition")
-    st.markdown("---")
-   url="https://gumroad.com/l/yourproduct" 
-    )
+    st.link_button("⚡ Get Source Code ($9)", "https://gumroad.com/l/yourproduct")
     # 👇 NEW BUY BUTTON ADDED HERE 👇
     st.link_button(
         label="⚡ Get Source Code ($9)", 
-        url="[YOUR_GUMROAD_LINK_HERE]"  # <--- PASTE YOUR LINK HERE
+        url="https://gumroad.com/l/yourpro"  
     )
     st.caption("Launch your own SaaS in minutes.")
     st.markdown("---")
@@ -176,4 +173,5 @@ if st.button("Generate Content 🚀", type="primary"):
 # --- FOOTER ---
 st.markdown("---")
 st.caption("Built by Aqib | v3.1 Pro")
+
 
