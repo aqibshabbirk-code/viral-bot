@@ -21,29 +21,42 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # --- SIDEBAR (Branding & Info) ---
 with st.sidebar:
-    # Adding a Logo (using a free icon URL)
+    # Adding a Logo
     st.image("https://cdn-icons-png.flaticon.com/512/2620/2620987.png", width=80)
     st.title("ViralBot Pro")
-    st.link_button("⚡ Get Source Code ($9)", "https://gumroad.com/l/yourproduct")
-    # 👇 NEW BUY BUTTON ADDED HERE 👇
-    st.link_button(
-        label="⚡ Get Source Code ($9)", 
-        url="https://gumroad.com/l/yourpro"  
-    )
+    st.caption("v3.1 - Ultimate Edition")
+    st.markdown("---")
+    
+    # 👇 YOUR RED BUY BUTTON IS HERE 👇
+    st.markdown("""
+        <a href="https://maqib395.gumroad.com/l/viralpostbot" target="_blank">
+            <button style="
+                width: 100%;
+                background-color: #FF4B4B;
+                color: white;
+                border: none;
+                padding: 10px;
+                border-radius: 5px;
+                font-weight: bold;
+                cursor: pointer;
+            ">
+                ⚡ Get Source Code ($9)
+            </button>
+        </a>
+        """, unsafe_allow_html=True)
+    
     st.caption("Launch your own SaaS in minutes.")
     st.markdown("---")
-    # 👆 END OF NEW CODE 👆
     
     # "How to Use" Guide inside an Expander
     with st.expander("ℹ️ How to use this tool"):
         st.write("""
         1. **Enter Topic:** What are you writing about?
-        2. **Select Style:** Choose a tone (e.g., Contrarian).
+        2. **Select Style:** Choose a tone.
         3. **Generate:** Click the button.
-        4. **Download:** Save your hooks instantly.
         """)
     
-    st.info("💡 Tip: Try the 'Contrarian' style for max engagement.")
+    st.info("💡 Tip: Try the 'Contrarian' style.")
 
 # --- MAIN APP HEADER ---
 st.title("🚀 Viral Post Generator")
@@ -173,5 +186,3 @@ if st.button("Generate Content 🚀", type="primary"):
 # --- FOOTER ---
 st.markdown("---")
 st.caption("Built by Aqib | v3.1 Pro")
-
-
