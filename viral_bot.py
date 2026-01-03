@@ -19,51 +19,33 @@ div[class^='viewerBadge'] {display: none !important;}
 """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-# --- SIDEBAR (Branding & Info) ---
-with st.sidebar:
-    # Adding a Logo
-    st.image("https://cdn-icons-png.flaticon.com/512/2620/2620987.png", width=80)
-    st.title("ViralBot Pro")
-    st.caption("v3.1 - Ultimate Edition")
-    st.markdown("---")
-    
-    # 👇 YOUR RED BUY BUTTON IS HERE 👇
-    st.markdown("""
-        <a href="https://maqib395.gumroad.com/l/viralpostbot" target="_blank">
-            <button style="
-                width: 100%;
-                background-color: #FF4B4B;
-                color: white;
-                border: none;
-                padding: 10px;
-                border-radius: 5px;
-                font-weight: bold;
-                cursor: pointer;
-            ">
-                ⚡ Get Source Code ($9)
-            </button>
-        </a>
-        """, unsafe_allow_html=True)
-    
-    st.caption("Launch your own SaaS in minutes.")
-    st.markdown("---")
-    
-    # "How to Use" Guide inside an Expander
-    with st.expander("ℹ️ How to use this tool"):
-        st.write("""
-        1. **Enter Topic:** What are you writing about?
-        2. **Select Style:** Choose a tone.
-        3. **Generate:** Click the button.
-        """)
-    
-    st.info("💡 Tip: Try the 'Contrarian' style.")
+# --- SIDEBAR (Safe Mode - No Indentation Needed) ---
+st.sidebar.image("https://cdn-icons-png.flaticon.com/512/2620/2620987.png", width=80)
+st.sidebar.title("ViralBot Pro")
+st.sidebar.caption("v3.1 - Ultimate Edition")
+st.sidebar.markdown("---")
+
+# 👇 THE BUY BUTTON (Native Streamlit Widget) 👇
+st.sidebar.link_button("⚡ Get Source Code ($9)", "https://maqib395.gumroad.com/l/viralpostbot", type="primary")
+
+st.sidebar.caption("Launch your own SaaS in minutes.")
+st.sidebar.markdown("---")
+
+# Guide
+with st.sidebar.expander("ℹ️ How to use this tool"):
+    st.write("1. Enter Topic")
+    st.write("2. Select Style")
+    st.write("3. Generate")
+    st.write("4. Download")
+
+st.sidebar.info("💡 Tip: Try the 'Contrarian' style.")
 
 # --- MAIN APP HEADER ---
 st.title("🚀 Viral Post Generator")
 st.subheader("Generate market-proven hooks in seconds.")
 st.markdown("---")
 
-# --- INPUT SECTION (Using Columns for better layout) ---
+# --- INPUT SECTION ---
 col1, col2 = st.columns([2, 1])
 
 with col1:
