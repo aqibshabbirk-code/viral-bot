@@ -19,16 +19,17 @@ div[class^='viewerBadge'] {display: none !important;}
 """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-# --- SIDEBAR (Safe Mode - No Indentation Needed) ---
+# --- SIDEBAR ---
 st.sidebar.image("https://cdn-icons-png.flaticon.com/512/2620/2620987.png", width=80)
 st.sidebar.title("ViralBot Pro")
 st.sidebar.caption("v3.1 - Ultimate Edition")
 st.sidebar.markdown("---")
 
-# 👇 THE BUY BUTTON (Native Streamlit Widget) 👇
-st.sidebar.link_button("⚡ Get Source Code ($9)", "https://maqib395.gumroad.com/l/viralpostbot", type="primary")
+# 👇 THIS IS THE NEW LINK (It is just text, so it must show up) 👇
+st.sidebar.markdown("## [⚡ GET SOURCE CODE $9](https://maqib395.gumroad.com/l/viralpostbot)")
+st.sidebar.caption("Click above to download.")
+# 👆 -----------------------------------------------------------
 
-st.sidebar.caption("Launch your own SaaS in minutes.")
 st.sidebar.markdown("---")
 
 # Guide
