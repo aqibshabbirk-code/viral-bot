@@ -26,7 +26,8 @@ with st.sidebar:
     st.title("ViralBot Pro")
     st.caption("v3.1 - Ultimate Edition")
     st.markdown("---")
-    https://gumroad.com/l/yourproduct
+   url="https://gumroad.com/l/yourproduct" 
+    )
     # 👇 NEW BUY BUTTON ADDED HERE 👇
     st.link_button(
         label="⚡ Get Source Code ($9)", 
@@ -175,3 +176,4 @@ if st.button("Generate Content 🚀", type="primary"):
 # --- FOOTER ---
 st.markdown("---")
 st.caption("Built by Aqib | v3.1 Pro")
+
